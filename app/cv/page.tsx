@@ -5,8 +5,8 @@ import { useRouter } from "next/navigation";
 import WhatsAppButton from "@/app/components/WhatAppButton"
 import HeroSection from "../components/HeroSection";
 
-export default function Home() {   const router = useRouter()
-
+export default function Home() {
+     const router = useRouter()
     const handleEnter = () => {
       router.push('/Resume')
     }
