@@ -4,7 +4,7 @@ export default function WhatsAppButton() {
   const [clicked, setClicked] = useState(false);
 
   const phoneNumber = "2058084137";
-  const message = "Hello I am Phouthasin";
+  const message = "Hello Phouthasin, I would like to connect with you. ";
   const encodedMessage = encodeURIComponent(message);
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 

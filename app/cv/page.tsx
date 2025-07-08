@@ -10,6 +10,9 @@ export default function Home() {
     const handleEnter = () => {
       router.push('/Resume')
     }
+    const handleEnters = () => {
+      router.push('/')
+    }
   return (
     <>
       <Head>
@@ -56,17 +59,31 @@ export default function Home() {
         {/* Projects */}
         <section id="projects">
           <h2 className="text-2xl font-bold mb-4">Projects</h2>
-            <div className="p-4 border rounded shadow">
+           <div className="px-4">
+           <div className="p-4 border rounded shadow">
               <h3 className="text-lg font-semibold">Config Wi-Fi </h3>
               <p>Captive Portal</p>
             </div>
+            <div className="p-4 border rounded shadow">
+              <h3 className="text-lg font-semibold">Atm System</h3>
+              <p>Make an Atm System by C </p>
+            </div>
+            <div className="p-4 border rounded shadow">
+              <h3 className="text-lg font-semibold">System Network</h3>
+              <p> Make an Network System for Internet + Router + Switch + Pc </p>
+            </div>
+            <div className="p-4 border rounded shadow">
+              <h3 className="text-lg font-semibold">Wi-fi</h3>
+              <p>install Wi-fi Router </p>
+            </div>
+           </div>
         </section>
 
         {/* Contact */}
         <section id="contact">
         <h2 className="text-2xl font-bold mb-4">Contact</h2>
           
-          <div className=" p-4 rounded border" >
+          <div className=" p-4 rounded border px-5" >
           
           <p >Tel: 20 5808 4137</p>
           <p>Address  : Pakthag , Vientine , Laos.</p>
@@ -79,6 +96,10 @@ export default function Home() {
             <button     onClick={handleEnter}
         className="bg-white  text-black px-6 py-2 rounded hover:bg-gray-200"
       >Resume View    
+      </button>
+      <button     onClick={handleEnters}
+        className="bg-white  mx-10 text-black px-6 py-2 rounded hover:bg-gray-200"
+      >Back  
       </button>
         </section>
       </main>
